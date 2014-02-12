@@ -1,0 +1,188 @@
+$ /cygdrive/c/Program\ Files/Java/jdk1.7.0_51/bin/javap -classpath networktables-desktop.jar edu.wpi.first.wpilibj.networktables.NetworkTable
+Compiled from "NetworkTable.java"
+public class edu.wpi.first.wpilibj.networktables.NetworkTable implements edu.wpi.first.wpilibj.tables.ITable,edu.wpi.first.wpilibj.tables.IRemote {
+  public static final char PATH_SEPARATOR;
+  public static final int DEFAULT_PORT;
+  public static synchronized void initialize() throws java.io.IOException;
+  public static synchronized void setTableProvider(edu.wpi.first.wpilibj.networktables.NetworkTableProvider);
+  public static synchronized void setServerMode();
+  public static synchronized void setClientMode();
+  public static synchronized void setTeam(int);
+  public static synchronized void setIPAddress(java.lang.String);
+  public static synchronized edu.wpi.first.wpilibj.networktables.NetworkTable getTable(java.lang.String);
+  edu.wpi.first.wpilibj.networktables.NetworkTable(java.lang.String, edu.wpi.first.wpilibj.networktables.NetworkTableProvider);
+  public java.lang.String toString();
+  public boolean isConnected();
+  public boolean isServer();
+  public void addConnectionListener(edu.wpi.first.wpilibj.tables.IRemoteConnectionListener, boolean);
+  public void removeConnectionListener(edu.wpi.first.wpilibj.tables.IRemoteConnectionListener);
+  public void addTableListener(edu.wpi.first.wpilibj.tables.ITableListener);
+  public void addTableListener(edu.wpi.first.wpilibj.tables.ITableListener, boolean);
+  public void addTableListener(java.lang.String, edu.wpi.first.wpilibj.tables.ITableListener, boolean);
+  public void addSubTableListener(edu.wpi.first.wpilibj.tables.ITableListener);
+  public void removeTableListener(edu.wpi.first.wpilibj.tables.ITableListener);
+  public synchronized edu.wpi.first.wpilibj.tables.ITable getSubTable(java.lang.String);
+  public boolean containsKey(java.lang.String);
+  public boolean containsSubTable(java.lang.String);
+  public void putNumber(java.lang.String, double);
+  public double getNumber(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+  public double getNumber(java.lang.String, double);
+  public void putString(java.lang.String, java.lang.String);
+  public java.lang.String getString(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+  public java.lang.String getString(java.lang.String, java.lang.String);
+  public void putBoolean(java.lang.String, boolean);
+  public boolean getBoolean(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+  public boolean getBoolean(java.lang.String, boolean);
+  public void retrieveValue(java.lang.String, java.lang.Object);
+  public void putValue(java.lang.String, java.lang.Object);
+  public java.lang.Object getValue(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+  public java.lang.Object getValue(java.lang.String, java.lang.Object);
+  public void putInt(java.lang.String, int);
+  public int getInt(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+  public int getInt(java.lang.String, int) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+  public void putDouble(java.lang.String, double);
+  public double getDouble(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+  public double getDouble(java.lang.String, double);
+  static edu.wpi.first.wpilibj.networktables.NetworkTable$NetworkTableKeyCache access$000(edu.wpi.first.wpilibj.networktables.NetworkTable);
+  static edu.wpi.first.wpilibj.networktables2.NetworkTableNode access$100(edu.wpi.first.wpilibj.networktables.NetworkTable);
+  static {};
+}
+
+Administrator@admin-7b72a3185 /cygdrive/c/Documents and Settings/Administrator/My Documents/Visual Studio 2010/Projects/JniBridgeTest1
+
+$ /cygdrive/c/Program\ Files/Java/jdk1.7.0_51/bin/javap -s -classpath networktables-desktop.jar edu.wpi.first.wpilibj.networktables.NetworkTable
+Compiled from "NetworkTable.java"
+public class edu.wpi.first.wpilibj.networktables.NetworkTable implements edu.wpi.first.wpilibj.tables.ITable,edu.wpi.first.wpilibj.tables.IRemote {
+  public static final char PATH_SEPARATOR;
+    Signature: C
+  public static final int DEFAULT_PORT;
+    Signature: I
+  public static synchronized void initialize() throws java.io.IOException;
+    Signature: ()V
+
+  public static synchronized void setTableProvider(edu.wpi.first.wpilibj.networktables.NetworkTableProvider);
+    Signature: (Ledu/wpi/first/wpilibj/networktables/NetworkTableProvider;)V
+
+  public static synchronized void setServerMode();
+    Signature: ()V
+
+  public static synchronized void setClientMode();
+    Signature: ()V
+
+  public static synchronized void setTeam(int);
+    Signature: (I)V
+
+  public static synchronized void setIPAddress(java.lang.String);
+    Signature: (Ljava/lang/String;)V
+
+  public static synchronized edu.wpi.first.wpilibj.networktables.NetworkTable getTable(java.lang.String);
+    Signature: (Ljava/lang/String;)Ledu/wpi/first/wpilibj/networktables/NetworkTable;
+
+  edu.wpi.first.wpilibj.networktables.NetworkTable(java.lang.String, edu.wpi.first.wpilibj.networktables.NetworkTableProvider);
+    Signature: (Ljava/lang/String;Ledu/wpi/first/wpilibj/networktables/NetworkTableProvider;)V
+
+  public java.lang.String toString();
+    Signature: ()Ljava/lang/String;
+
+  public boolean isConnected();
+    Signature: ()Z
+
+  public boolean isServer();
+    Signature: ()Z
+
+  public void addConnectionListener(edu.wpi.first.wpilibj.tables.IRemoteConnectionListener, boolean);
+    Signature: (Ledu/wpi/first/wpilibj/tables/IRemoteConnectionListener;Z)V
+
+  public void removeConnectionListener(edu.wpi.first.wpilibj.tables.IRemoteConnectionListener);
+    Signature: (Ledu/wpi/first/wpilibj/tables/IRemoteConnectionListener;)V
+
+  public void addTableListener(edu.wpi.first.wpilibj.tables.ITableListener);
+    Signature: (Ledu/wpi/first/wpilibj/tables/ITableListener;)V
+
+  public void addTableListener(edu.wpi.first.wpilibj.tables.ITableListener, boolean);
+    Signature: (Ledu/wpi/first/wpilibj/tables/ITableListener;Z)V
+
+  public void addTableListener(java.lang.String, edu.wpi.first.wpilibj.tables.ITableListener, boolean);
+    Signature: (Ljava/lang/String;Ledu/wpi/first/wpilibj/tables/ITableListener;Z)V
+
+  public void addSubTableListener(edu.wpi.first.wpilibj.tables.ITableListener);
+    Signature: (Ledu/wpi/first/wpilibj/tables/ITableListener;)V
+
+  public void removeTableListener(edu.wpi.first.wpilibj.tables.ITableListener);
+    Signature: (Ledu/wpi/first/wpilibj/tables/ITableListener;)V
+
+  public synchronized edu.wpi.first.wpilibj.tables.ITable getSubTable(java.lang.String);
+    Signature: (Ljava/lang/String;)Ledu/wpi/first/wpilibj/tables/ITable;
+
+  public boolean containsKey(java.lang.String);
+    Signature: (Ljava/lang/String;)Z
+
+  public boolean containsSubTable(java.lang.String);
+    Signature: (Ljava/lang/String;)Z
+
+  public void putNumber(java.lang.String, double);
+    Signature: (Ljava/lang/String;D)V
+
+  public double getNumber(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+    Signature: (Ljava/lang/String;)D
+
+  public double getNumber(java.lang.String, double);
+    Signature: (Ljava/lang/String;D)D
+
+  public void putString(java.lang.String, java.lang.String);
+    Signature: (Ljava/lang/String;Ljava/lang/String;)V
+
+  public java.lang.String getString(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+    Signature: (Ljava/lang/String;)Ljava/lang/String;
+
+  public java.lang.String getString(java.lang.String, java.lang.String);
+    Signature: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+  public void putBoolean(java.lang.String, boolean);
+    Signature: (Ljava/lang/String;Z)V
+
+  public boolean getBoolean(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+    Signature: (Ljava/lang/String;)Z
+
+  public boolean getBoolean(java.lang.String, boolean);
+    Signature: (Ljava/lang/String;Z)Z
+
+  public void retrieveValue(java.lang.String, java.lang.Object);
+    Signature: (Ljava/lang/String;Ljava/lang/Object;)V
+
+  public void putValue(java.lang.String, java.lang.Object);
+    Signature: (Ljava/lang/String;Ljava/lang/Object;)V
+
+  public java.lang.Object getValue(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+    Signature: (Ljava/lang/String;)Ljava/lang/Object;
+
+  public java.lang.Object getValue(java.lang.String, java.lang.Object);
+    Signature: (Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+  public void putInt(java.lang.String, int);
+    Signature: (Ljava/lang/String;I)V
+
+  public int getInt(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+    Signature: (Ljava/lang/String;)I
+
+  public int getInt(java.lang.String, int) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+    Signature: (Ljava/lang/String;I)I
+
+  public void putDouble(java.lang.String, double);
+    Signature: (Ljava/lang/String;D)V
+
+  public double getDouble(java.lang.String) throws edu.wpi.first.wpilibj.tables.TableKeyNotDefinedException;
+    Signature: (Ljava/lang/String;)D
+
+  public double getDouble(java.lang.String, double);
+    Signature: (Ljava/lang/String;D)D
+
+  static edu.wpi.first.wpilibj.networktables.NetworkTable$NetworkTableKeyCache access$000(edu.wpi.first.wpilibj.networktables.NetworkTable);
+    Signature: (Ledu/wpi/first/wpilibj/networktables/NetworkTable;)Ledu/wpi/first/wpilibj/networktables/NetworkTable$NetworkTableKeyCache;
+
+  static edu.wpi.first.wpilibj.networktables2.NetworkTableNode access$100(edu.wpi.first.wpilibj.networktables.NetworkTable);
+    Signature: (Ledu/wpi/first/wpilibj/networktables/NetworkTable;)Ledu/wpi/first/wpilibj/networktables2/NetworkTableNode;
+
+  static {};
+    Signature: ()V
+}
